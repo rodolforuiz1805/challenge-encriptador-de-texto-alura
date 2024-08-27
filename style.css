@@ -1,0 +1,175 @@
+/* Reset de márgenes y padding */
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #E6E6FA; /* Cambiado de rgb(230, 230, 250) a hexadecimal */
+}
+
+.logo{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    position: absolute;
+}
+
+.contenido-entrada{
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    color: #0E2B69; /* Cambiado de rgb(14, 43, 105) a hexadecimal */
+    background-color: #E6E6FA; /* Cambiado de rgb(230, 230, 250) a hexadecimal */
+}
+
+.contenido-salida{
+    width: 28%;
+    height: 90vh;
+    float: right;
+    display: flex;
+    margin-top: 5vh;
+    margin-right: 1%;
+    border-radius: 2rem;
+    background-color: #F8F8FF; /* Cambiado de rgb(248, 248, 255) a hexadecimal */
+}
+
+.salida-js{
+    margin: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.parrafo-js{
+    display: inline;
+}
+
+.btn-copiar{
+    font-size: 1.5rem;
+}
+
+.img-copiar{
+    vertical-align: middle;
+    width: 1.2em;
+}
+
+.btn-copiar:hover{
+    cursor: pointer;
+}
+
+.contenido-vacio{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.informacion{
+    margin-top: 9rem;
+    color: #696969; /* Cambiado de rgb(105, 105, 105) a hexadecimal */
+    font-size: 0.8em;
+    margin-left: 10rem;
+}
+
+.informacion-img{
+    width: 1.5em;
+    opacity: 80%;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.informacion-img:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.botones{
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+
+.btn-azul{
+    color: white;
+    padding: 1rem 0;
+    min-width: 15rem;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    margin-right: 0.5rem;
+    border-color: #0E2B69; /* Cambiado de rgb(14, 43, 105) a hexadecimal */
+    background-color: #0E2B69; /* Cambiado de rgb(14, 43, 105) a hexadecimal */
+}
+
+.btn-gris{
+    padding: 1rem 0;
+    font-size: 1.5em;
+    min-width: 15rem;
+    border-radius: 0.5em;
+    color: #0E2B69; /* Cambiado de rgb(14, 43, 105) a hexadecimal */
+    background-color: #D3D3D3; /* Cambiado de rgb(211, 211, 211) a hexadecimal */
+    border-color: #0E2B69; /* Cambiado de rgb(14, 43, 105) a hexadecimal */
+}
+
+.btn-azul:hover, .btn-gris:hover{
+    opacity: 95%;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+
+    body {
+        padding: 1.5rem; /* Padding mayor para pantallas pequeñas */
+    }
+
+    .contenido-entrada, .contenido-salida {
+        width: calc(100% - 2rem); /* Ajustar el ancho al espacio disponible */
+        margin: 2rem auto; /* Centrar el contenedor */
+    }
+
+    .contenido-salida {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 2rem auto;
+        display: block;
+        padding: 1rem;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .btn-azul, .btn-gris {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    .informacion {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .logo {
+        position: static;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer {
+        padding: 0.5rem; /* Ajustar el padding del footer en dispositivos móviles */
+    }
+}

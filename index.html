@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Fjalla+One&family=Roboto+Slab&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="https://www.aluracursos.com/"><img src="assets/logo.png" alt="logo alura"></a> <!-- Ruta actualizada a la carpeta "assets" -->
+    </header>
+
+    <main>
+        <textarea class="contenido-entrada" id="entrada-texto" cols="35" rows="6" placeholder="Ingrese el texto aquí" spellcheck="false"></textarea> <!-- Cambiado a español -->
+    
+        <section id="salida" class="contenido-salida">
+            <div class="salida-js" id="salida-js">
+                <p class="parrafo-js" id="texto-js"></p> <!-- Cambiado a español -->
+                <button class="btn-copiar" id="btn-copiar"><img class="img-copiar" src="assets/copy.png" alt="logo copiar"></button> <!-- Ruta actualizada a la carpeta "assets" -->
+            </div>
+
+            <div id="vacio" class="contenido-vacio"> <!-- Cambiado a español -->
+                <img src="assets/muñeco.png" alt="muñeco"> <!-- Ruta actualizada a la carpeta "assets" -->
+                <p>
+                    <b>Ningún mensaje fue encontrado</b><br>
+                    Ingresa el texto que desees encriptar o desencriptar
+                </p>
+            </div>
+        </section>
+
+        <p class="informacion"><img class="informacion-img" src="assets/info.png" alt="información">Solo letras minúsculas y sin acentos</p> <!-- Cambiado a español y ruta actualizada a la carpeta "assets" -->
+
+        <section class="botones"> <!-- Cambiado a español -->
+            <button class="btn-azul" id="btn-encriptar">Encriptar</button> <!-- Cambiado a español -->
+            <button class="btn-gris" id="btn-desencriptar">Desencriptar</button> <!-- Cambiado a español -->
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/rodolfo-ruiz" target="_blank"><img src="assets/github.png" alt="GitHub" style="width: 24px;"></a>
+        <p>Desarrollado por Rodolfo Ruiz</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
